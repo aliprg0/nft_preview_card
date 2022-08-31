@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,400&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --bright-blue: hsl(245, 75%, 52%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-dark-blue-mainbg);
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  background-color: var(--very-dark-blue-cardbg);
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 75px auto;
+  margin-bottom: 0px;
+  border-radius: 15px;
+}
+
+.image {
+  width: 100%;
+  padding: 25px;
+  border-radius: 30px;
+}
+
+.information {
+  color: aliceblue;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.information strong {
+  letter-spacing: 1px;
+}
+
+.information p {
+  margin-top: 10px;
+  color: var(--soft-blue);
+  line-height: 25px;
+}
+
+.price_date_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.left_side {
+  color: var(--cyan);
+}
+
+.left_side b {
+  padding-left: 5px;
+  font-weight: 500;
+}
+
+.right_side {
+  color: var(--soft-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.line {
+  width: 90%;
+  border-color: var(--very-dark-blue-line);
+  margin: auto;
+}
+
+.creator_section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.creator_section img {
+  width: 45px;
+  border-color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.name_of_person {
+  color: var(--soft-blue);
+  margin-left: 15px;
+}
+
+.name_of_person b {
+  color: white;
+  font-weight: 300;
+}
+
+.my_info {
+  background-color: var(--very-dark-blue-cardbg);
+  width: 220px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 18px;
+  color: var(--soft-blue);
+  border-radius: 40px;
+  font-size: 0.8rem;
+}
+.name {
+  padding: 20px 10px 0 10px;
+}
+
+.email {
+  padding-bottom: 15px;
+}
+
+.github_button {
+  background-color: var(--bright-blue);
+  width: 70%;
+  margin: 5px auto;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  height: 3rem;
+  padding-top: 15px;
+}
+
+.github_button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
